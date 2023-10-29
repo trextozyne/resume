@@ -1,0 +1,12 @@
+{
+  "name": "resume",
+  "scripts": {
+    "start": "node dist/server/server.bundle.js"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "buildpacks": [
+    { "url": "heroku/nodejs" }
+  ]
+}
