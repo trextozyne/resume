@@ -1,1 +1,1 @@
-web: ./start.sh
+web: server/server.bundle.js
