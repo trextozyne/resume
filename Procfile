@@ -1,1 +1,1 @@
-web: dist/server/server.bundle.js
+web: server/server.bundle.js
