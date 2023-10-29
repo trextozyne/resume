@@ -4,7 +4,8 @@
     "start": "node server/server.bundle.js"
   },
   "engines": {
-    "node": "20.x"
+    "node": "20.x",
+    "npm": "7.x"
   },
   "buildpacks": [
     { "url": "heroku/nodejs" }
