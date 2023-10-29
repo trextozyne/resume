@@ -1,5 +1,5 @@
 {
-  "name": "resume",
+  "name": "resume", 
   "scripts": {
     "start": "node server/server.bundle.js"
   },
