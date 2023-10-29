@@ -1,0 +1,40 @@
+// my-custom-theme.scss
+
+@use '@angular/material' as mat;
+@include mat.core();
+
+// Define a custom white palette
+$my-white-palette: map-merge(mat.$grey-palette, (
+  50: #ffffff,
+  100: #ffffff,
+  200: #ffffff,
+  300: #ffffff,
+  400: #ffffff,
+  500: #ffffff,
+  600: #ffffff,
+  700: #ffffff,
+  800: #ffffff,
+  900: #ffffff,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #ffffff,
+  A700: #ffffff,
+));
+
+$my-primary: mat.define-palette(mat.$pink-palette);  // Use pink palette for primary
+$my-accent: mat.define-palette($my-white-palette);   // Use custom white palette for accent
+$my-warn: mat.define-palette(mat.$blue-palette);     // Use blue palette for warn
+
+$my-theme: mat.define-light-theme((
+  color: (
+    primary: $my-primary,
+    accent: $my-accent,
+    warn: $my-warn,
+  ),
+  density: 0,
+));
+
+@include mat.all-component-themes($my-theme);
+@include mat.core-theme($my-theme);
+@include mat.input-theme($my-theme);
+@include mat.button-theme($my-theme);

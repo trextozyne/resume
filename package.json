@@ -1,0 +1,9 @@
+{
+  "name": "resume", 
+  "scripts": {
+    "start": "node server/server.bundle.js"
+  },
+  "buildpacks": [
+    { "url": "heroku/nodejs" }
+  ]
+}
