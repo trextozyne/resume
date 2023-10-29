@@ -1,7 +1,7 @@
 {
   "name": "resume",
   "scripts": {
-    "start": "node dist/server/server.bundle.js"
+    "start": "node server/server.bundle.js"
   },
   "engines": {
     "node": "20.x"
