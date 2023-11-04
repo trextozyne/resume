@@ -6,6 +6,8 @@ COPY ./dist /work/dist
 
 WORKDIR /work/dist/server
 
+EXPOSE 8083
+
 ENV NODE_ENV=production
 
 CMD node server.bundle.js
