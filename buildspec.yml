@@ -36,7 +36,7 @@ phases:
 
   post_build:
     commands:
-      - aws ecs update-service --cluster ECS-Cluster-FlaskApp --service ECS-Service --force-new-deployment
+      - aws ecs update-service --cluster ECS-Cluster-ResumeApp --service ECS-Service --force-new-deployment
 
 artifacts:
   files:
